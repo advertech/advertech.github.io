@@ -1,0 +1,55 @@
+.header {
+	font-size: 20px;
+	line-height: 1.5;
+	margin-top: 30px;
+	margin-bottom: 60px;
+}
+
+.header span{
+	display: block;
+
+}
+
+
+.container, .col-lg-6 {
+
+}
+
+.form {
+	border: 5px solid blue;
+	padding: 35px 20px;
+
+}
+
+.video {
+	margin-bottom: 15px;
+}
+
+.section{
+	
+	padding: 30px;
+
+}
+
+.form p{
+	font-size: 18px;
+	text-align: center;
+}
+
+.formbtn{
+margin: 8px;
+text-align: center;
+}
+
+.section-header{
+	font-size: 20px;
+
+}
+
+.feature {
+	margin-top: 60px;
+}
+
+.feature p {
+	margin-top: 20px;
+}
