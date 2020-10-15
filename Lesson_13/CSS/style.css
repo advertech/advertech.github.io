@@ -1,0 +1,86 @@
+body {
+	text-align: center;
+
+}
+
+p {
+	font-family: arial;
+	font-size: 13px;
+	text-align: left;
+	margin-left: 30px;
+	margin-top: 18px;
+
+}
+
+.container {
+	margin-top: 7px;
+	text-align: center;
+	width: 570px;
+	height: 570px;
+	display: inline-block;
+ background-image: url("../img/fon.jpg");
+ background-color: #ebf4f4;
+	}
+
+
+.form {
+	width: 318px;
+	height: 368px;
+display: inline-block;
+	margin: 100px auto;
+	background-color: white;
+	border: solid 1px lightgray;
+	
+}
+
+.greenbox {
+	display: inline-block;
+	margin-top: -5px;
+	float: left;
+	margin-left: 30px;
+	width: 150px;
+	height: 25px;
+	background-color: #01b3b3;
+	text-align: center;
+
+}
+
+.greenbox H1 {
+	
+	text-transform: uppercase;
+	color: white;
+	font-family: sans-serif;
+	font-size: 12px;
+	font-weight: 400;
+}
+
+.form input {
+background-image: url("../img/fon.jpg");
+border-radius: 2px;
+width: 254px;
+height: 26px;
+margin-left: auto;
+margin-right: auto;
+background-color: green;
+font-size: 12px;
+border: solid 1px	lightgray;
+font-style: italic;
+}
+
+.fields {
+	margin-top: 55px;
+}
+
+
+.btn {
+	margin-top: 35px;
+	width: 260px;
+	height: 45px;
+	background-color: #01b3b3;
+	color: white;
+	text-transform: uppercase;
+	border: none;
+	border-radius: 5px;
+font-size: 16px;
+font-weight: 600;
+}
