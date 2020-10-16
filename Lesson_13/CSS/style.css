@@ -113,3 +113,16 @@ font-style: italic;
 font-size: 16px;
 font-weight: 600;
 }
+
+.back {
+	margin-top: 30px;
+	width: 260px;
+	height: 45px;
+	background-image: linear-gradient(#d6d6d6, #9c9c9c);
+	color: white;
+	text-transform: uppercase;
+	border: none;
+	border-radius: 5px;
+font-size: 16px;
+font-weight: 600;
+}
