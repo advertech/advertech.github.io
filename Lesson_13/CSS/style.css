@@ -1,40 +1,49 @@
 body {
 	text-align: center;
-
+box-sizing: border-box;
 }
 
 p {
+ 
 	font-family: arial;
 	font-size: 13px;
-	text-align: left;
 	margin-left: 30px;
-	margin-top: 18px;
+	text-align: left;
+	}
 
+sup {
+	color: #01b3b3;
 }
-
 .container {
-	margin-top: 7px;
-	text-align: center;
+	margin: 0 auto;
 	width: 570px;
 	height: 570px;
-	display: inline-block;
  background-image: url("../img/fon.jpg");
  background-color: #ebf4f4;
 	}
 
 
+
+.star {
+	color:  #01b3b3; 
+	font-size: 12px;
+}
+
 .form {
-	width: 318px;
-	height: 368px;
-display: inline-block;
-	margin: 100px auto;
-	background-color: white;
-	border: solid 1px lightgray;
-	
+	display: inline-block;
+	width: 320px;
+	height: 39px;
+	margin-top: 100px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #fff;
+	margin-bottom: -4px;
+		border-right: solid 1px #cdcece;
+	border-left: solid 1px #cdcece;
+	border-top: solid 1px #cdcece;
 }
 
 .greenbox {
-	display: inline-block;
 	margin-top: -5px;
 	float: left;
 	margin-left: 30px;
@@ -42,6 +51,7 @@ display: inline-block;
 	height: 25px;
 	background-color: #01b3b3;
 	text-align: center;
+	box-shadow: 1px 1px lightgray;
 
 }
 
@@ -54,29 +64,48 @@ display: inline-block;
 	font-weight: 400;
 }
 
-.form input {
+
+.fields {
+	display: inline-block;
+	width: 320px;
+	height: 75px;
+	background-color: #fff;
+	border-right: solid 1px #cdcece;
+	border-left: solid 1px #cdcece;
+
+
+
+}
+
+
+.fields input {
 background-image: url("../img/fon.jpg");
+background-color: green;
 border-radius: 2px;
 width: 254px;
 height: 26px;
 margin-left: auto;
 margin-right: auto;
-background-color: green;
+margin-bottom: 0px;
 font-size: 12px;
 border: solid 1px	lightgray;
 font-style: italic;
 }
 
-.fields {
-	margin-top: 55px;
+.btnfield {
+	display: inline-block;
+	width: 320px;
+	height: 105px;
+	background-color: #fff;
+	border-right: solid 1px #cdcece;
+	border-left: solid 1px #cdcece;
+	border-bottom: solid 1px #cdcece;
 }
-
-
 .btn {
-	margin-top: 35px;
+	margin-top: 30px;
 	width: 260px;
 	height: 45px;
-	background-color: #01b3b3;
+	background-image: linear-gradient(#01c5c5, #01b2b2);
 	color: white;
 	text-transform: uppercase;
 	border: none;
