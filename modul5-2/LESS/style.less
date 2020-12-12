@@ -1,0 +1,220 @@
+@font-face {
+    font-family: 'ProximaNova_bold';
+    src: url('../fonts/ProximaNova-Bold.eot');
+    src: url('../fonts/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ProximaNova-Bold.woff2') format('woff2'),
+        url('../fonts/ProximaNova-Bold.woff') format('woff'),
+        url('../fonts/ProximaNova-Bold.ttf') format('truetype'),
+        url('../fonts/ProximaNova-Bold.svg#ProximaNova-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ProximaNova';
+    src: url('../fonts/ProximaNova-Regular.eot');
+    src: url('../fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ProximaNova-Regular.woff2') format('woff2'),
+        url('../fonts/ProximaNova-Regular.woff') format('woff'),
+        url('../fonts/ProximaNova-Regular.ttf') format('truetype'),
+        url('../fonts/ProximaNova-Regular.svg#ProximaNova-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Proxima_semi';
+    src: url('ProximaNova-Semibold.woff2') format('woff2'),
+        url('ProximaNova-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* colors */
+@btn-color: #fab102;
+@icon-color: #46b814;
+@text-color: #5f5f62;
+@alert-color: #ff0000;
+@bglight-colcor: #f5f5f5;
+@valge: #fff; 
+@green: #70c849;
+@bg-green: #286c0a;
+@border-input: #dddddd;
+
+
+
+.reg() {
+	font-family: 'proximaNova', sans-serif;
+}
+
+.bold() {
+	font-family: 'ProximaNova_bold', sans-serif;
+}
+
+.semi() {
+	font-family: 'Proxima_semi', sans-serif;
+}
+
+
+/*basic serrings*/
+
+html {
+	font-size: 10px;	}
+
+	body {
+		 .reg();
+	}
+
+section {
+	padding: 10px;
+}
+ 
+ // header
+.header {
+	height: 7rem;
+}
+
+.button {
+	.bold();
+	background-color: @btn-color;
+ color: @valge;
+ padding: 1rem 3rem;
+ border-radius: 8px;
+ border: none;
+ text-transform: uppercase;
+	
+}
+
+.phone {
+	&-block{
+		text-align: right;
+	}
+
+	&-link{
+	display: inline-block;
+	font-weight: 600;
+	font-size: 1.7rem;
+	line-height: 7rem;
+ height: 7rem;
+	color: @text-color;
+	text-align: right;
+}
+}
+.wrap {
+	display: table;
+	width: 100%;
+	height: 7rem; 
+		&-block {
+			display: table-cell;
+			vertical-align: middle;
+			text-align: right;
+		}
+}
+/*main*/
+.main{
+	background: #000 url(../IMG/main-bg.jpg) center center no-repeat;
+ background-size: cover;
+	padding: 3rem 0 10rem;
+	&-content {
+		margin-top: 10rem;
+	}
+	// заголовок
+ &-title{	
+	 h1{
+	 	 .bold();
+				font-size: 3rem;
+				text-transform: uppercase;
+		}
+		//зеленый прямоугольник
+		span {
+			.reg();
+		display: inline-block;
+	 padding: 30px 40px;
+  font-size: 1.8rem;
+  background-color: @green;
+  color: @valge;
+  text-align: center;
+  strong { font-size: 2.2rem; }
+ }
+ }
+ // подзаголовок
+	
+	&-subtitle{
+  	font-size: 2.4rem;
+  	margin-top: 50px;
+  	margin-bottom: 60px;
+  }
+  //оплата по факту
+ &-trigger {
+ 	margin-top: 40px;
+ 	display: block;
+ 	font-size: 2.2rem;
+  text-transform: uppercase;
+ 	.bold();
+ }
+ // FORM styles
+ &-form{
+ 	background-color: @valge;
+ 	padding: 50px 40px;
+ 	text-align: center;
+ 	&-header{
+ 		font-size: 1.8rem;	
+ 		margin-bottom: 3rem;
+ 	}
+
+ 	// поле для ввода 
+ 	&-input {
+ 		//margin-top: 2.5rem;
+ 		margin-bottom: 2.5rem;
+ 		display: block;
+ 		width: 100%;
+ 		border: 1px solid @border-input; 
+ 		border-radius:7px;
+ 		padding: 15px; 
+
+ 	}
+ 	label {
+ 		display: inline-block;
+ 		//border: 1px solid red;
+ 		position: absolute;
+ 		left: 50%;
+ 		font-size: 1.3rem;
+ 		transform: translateX(-50%) translateY(-50%);
+ 		
+ 		background-color: @valge;
+ 		padding: 5px;
+ 		
+ 	}
+ 	&-btn{
+ 		//margin-top: 2rem;
+ 		display: block;
+ 		.semi();
+ 		width: 100%;
+ 		font-size: 1.6rem;
+ 		background-color: @btn-color;
+ 		border-radius: 5px;
+ 		border-style: solid 1px black;
+ 		padding: 20px 40px;
+ 		margin-bottom: 10px;
+ 	}
+ 	small {
+ 		font-size: 1rem;
+ 	}
+ 	&-comment{
+ 		.reg();
+ 		color: gray;
+ 		padding-left: 20px;
+ 		text-align: left;
+ 		display: block;
+ 		margin-top: 15px;
+ 		font-size: 1.2rem;
+ 	}
+ 	
+ } //form
+ } //main
+
+
+
