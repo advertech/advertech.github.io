@@ -71,6 +71,11 @@ html {
 section {
 	padding: 10px;
 }
+a:hover {text-decoration: none;}
+
+input, button, a {
+	 &:focus {outline: none;}
+}
  
  // header
 .header {
@@ -85,6 +90,11 @@ section {
  border-radius: 8px;
  border: none;
  text-transform: uppercase;
+ transition: 0.3s;
+  &:hover{
+  	cursor: pointer;
+  background-color: darken(@btn-color, 5%);
+ }
 	
 }
 
@@ -214,7 +224,47 @@ section {
  	}
  	
  } //form
+ 
  } //main
+ 
 
+/* для LG */ 
+@media (max-width: 1200px) {
+	.phone-block {text-align: center;}
+		
+		
+}
 
+/* для md 768px - 991 */
+@media (max-width: 991px)  {
+	.header{text-align: center;}
+	
+		.main-title h1 {font-size: 3rem; height: 2.5rem;}
+}
+
+/* для sm  576-768px */
+@media (max-width: 767px)  {
+	.main {background: #000 url(../IMG/main-bg.jpg) center left no-repeat;
+	 background-size: cover;}
+	.header{text-align: center;
+		height: 20rem;}
+	.phone-block {text-align: center;}
+	.wrap-block {text-align: center;}
+	.main-content {text-align: center;}
+ .main-title h1 {font-size: 2.3rem; height: 2.5rem;}
+	}
+
+/* для XS  */
+
+@media (max-width: 575.98px) {
+	.header {
+		text-align: center;
+		height: 20rem;
+	 }
+	 .phone-block {text-align: center;}
+	 .wrap-block {
+			text-align: center;
+		}
+
+}  
 

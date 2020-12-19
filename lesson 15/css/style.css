@@ -6,12 +6,14 @@ body {
 
 h2 {
 	font-weight: 100;
+	text-align: center;
 }
 
 .container {
 	max-width: 900px;
 	margin: auto;
 	padding: 15px;
+	
 	
 
 }
@@ -80,5 +82,47 @@ filter: brightness(40%);
 .button:hover {
 	font-size: 2rem;
 	 
+
+}
+
+
+a {	
+	font-size: 15px;
+	display: block;
+	color: black;
+ text-decoration: none;
+ width: 100%;
+ text-align: center;
+ 
+}
+
+a::before {
+	content: "   ";
+	display: block;
+	width: 100%;
+	height: 1px;
+	background-color: red;
+	transform: scaleX(0);
+	transition: all 0.4s;
+	transform-origin: 100%;
+}
+
+a::after {
+	content: "   ";
+	display: block;
+	width: 100%;
+	height: 1px;
+	background-color: green;
+	transform: scaleX(0);
+	transition: all 0.4s;
+	transform-origin: 0%;
+}
+
+a:hover::before {
+transform: scaleX(1);
+}
+
+a:hover:after {
+transform: scaleX(1);
 
 }
