@@ -85,16 +85,112 @@
       </div>
   	 	
   	 	</div> <!-- container -->
-  	 
+  	 </main>
 
+     <!-- слайдер  -->
+   <section class="features">
+     <div class="container">
+       <h2 class="section-header">  Преимущества работы с нами</h2>
 
+       <!-- сам слайдер  -->
+       <div class="features-slider">
+         
+         <div class="features-block">
+           <div class="features-img">
+             <picture>
+               <source srcset="IMG/features/coin.svg" type="image/">
+               <img src="IMG/features/coin.png" alt="Платите по факту ">
+             </picture>
+           </div> 
+             <h3>Платите по факту </h3>
+             <p>Вы оплачиваете выполненные работы только после их выполнения. Никаких скрытых доплат и промежуточных платежей. </p>         
+         </div>
 
-  	</main>
-   
+         <div class="features-block">
+           <div class="features-img">
+             <picture>
+               <source srcset="IMG/features/folder.svg" type="image/">
+               <img src="IMG/features/folder.png" alt="Заключаем договор">
+             </picture>
+             </div>
+             <h3>Заключаем договор</h3>
+             <p>Перед началом работ заключаем договор на юридическое лицо. Вы можете быть уверены, что все обязательства будут выполнены. </p>
+         </div>
 
+         <div class="features-block">
+           <div class="features-img">
+             <picture>
+               <source srcset="IMG/features/clock.svg" type="image/">
+               <img src="IMG/features/clock.png" alt="Точно в срок">
+             </picture>
+            </div>
+             <h3>Точно в срок</h3>
+             <p>Работаем строго по установленным срокам, которые прописаны в договоре. Если не успеваем, Вы платите меньше</p>
+         </div>
+
+         <div class="features-block">
+           <div class="features-img">
+             <picture>
+               <source srcset="IMG/features/bank.svg" type="image/">
+               <img src="IMG/features/bank.png" alt="Экономите на материалах">
+             </picture>
+            </div>
+             <h3>Экономите на материалах</h3>
+             <p>Мы являемся структурным подразделением компании поставщика строительных смесей <a href="#"> gicema.ru</a> и даём Вам самые выгодные цены.</p>  
+         </div>
+
+       </div> 
+
+       </div>
+
+    </section>
 
 
 
     <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+    <!-- подключаем стили стайдера  -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <link rel="stylesheet"  href="slick/slick.css">
+    <link rel="stylesheet"  href="slick/slick-theme.css">
+
+    <!--подключаем саму библиотеку  -->
+    <script =src="slick/slick.min.js"></script>
+    <script = src="slick/slick.js"></script>
+
+    <script> $(document).ready(function(){
+  $('.features-slider').slick({
+  infinite: true,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          prevArrow: '<button class="prev arrow"></button>',
+          nextArrow: '<button class="next arrow"></button>',
+          infinite: true
+        
+        }
+      },
+      
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1,
+          prevArrow: '<button class="prev arrow"></button>',
+          nextArrow: '<button class="next arrow"></button>',
+          slidesToScroll: 1
+        }
+      }
+      // You can unslick at a given breakpoint now by adding:
+      // settings: "unslick"
+      // instead of a settings object
+    ]
+  });
+});</script>
+  
+
   </body>
 </html>

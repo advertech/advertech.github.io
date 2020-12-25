@@ -1,0 +1,20 @@
+.test-slider {
+	height: 600px;
+}
+
+.main {
+	background-color: gray;
+}
+
+.one-time {
+	
+}
+
+.slider {
+	margin: 50px auto;
+	border: solid 1px green;
+	width: 700px;
+	text-align: center;
+	height: 400px;
+
+}

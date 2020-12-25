@@ -59,7 +59,7 @@
 }
 
 
-/*basic serrings*/
+/* basic settings*/
 
 html {
 	font-size: 10px;	}
@@ -68,15 +68,22 @@ html {
 		 .reg();
 	}
 
-section {
-	padding: 10px;
-}
+
 a:hover {text-decoration: none;}
+a:visited {
+  color: @icon-color;}
+a:link { color: @icon-color; }
+
+
 
 input, button, a {
 	 &:focus {outline: none;}
 }
  
+
+
+
+
  // header
 .header {
 	height: 7rem;
@@ -227,6 +234,66 @@ input, button, a {
  
  } //main
  
+
+
+// Slider Section
+section {
+	padding: 10rem 0 12rem 0;
+}
+.section-header {
+ margin: 20px 0;
+ .bold();
+	font-size: 3rem;
+	text-align: center;
+}
+
+.features {
+ &-block {
+	text-align: center;
+padding: 0 20px 0 20px;}
+	&-img {
+		height: 7rem;
+		margin: 9rem 0 5rem;
+		img{
+		display: block;
+		margin: 0 auto;
+	}
+
+	}
+	h3 {
+		.bold();
+		margin-bottom: 3rem;
+	}
+	p {
+		font-size: 1.3rem;
+		.reg();
+	}
+}
+
+.slick-active {
+	outline:none;
+}
+
+.arrow {
+	top: 50%;
+	position: absolute;
+	transform: translateY(-50%);
+	z-index: 99;
+	width: 2rem;
+	height: 2rem;
+	border: none;
+	
+}
+.prev {
+		left: 0;
+	background: url(../IMG/features/left.svg) center no-repeat;
+	background-size: 70%;
+}
+.next {
+	right: 0;
+	background: url(../IMG/features/right.svg) center no-repeat;
+	background-size: 70%;
+}
 
 /* для LG */ 
 @media (max-width: 1200px) {

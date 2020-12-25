@@ -22,18 +22,21 @@
   font-display: swap;
 }
 /* colors */
-/*basic serrings*/
+/* basic settings*/
 html {
   font-size: 10px;
 }
 body {
   font-family: 'proximaNova', sans-serif;
 }
-section {
-  padding: 10px;
-}
 a:hover {
   text-decoration: none;
+}
+a:visited {
+  color: #46b814;
+}
+a:link {
+  color: #46b814;
 }
 input:focus,
 button:focus,
@@ -165,6 +168,57 @@ a:focus {
   display: block;
   margin-top: 15px;
   font-size: 1.2rem;
+}
+section {
+  padding: 10rem 0 12rem 0;
+}
+.section-header {
+  margin: 20px 0;
+  font-family: 'ProximaNova_bold', sans-serif;
+  font-size: 3rem;
+  text-align: center;
+}
+.features-block {
+  text-align: center;
+  padding: 0 20px 0 20px;
+}
+.features-img {
+  height: 7rem;
+  margin: 9rem 0 5rem;
+}
+.features-img img {
+  display: block;
+  margin: 0 auto;
+}
+.features h3 {
+  font-family: 'ProximaNova_bold', sans-serif;
+  margin-bottom: 3rem;
+}
+.features p {
+  font-size: 1.3rem;
+  font-family: 'proximaNova', sans-serif;
+}
+.slick-active {
+  outline: none;
+}
+.arrow {
+  top: 50%;
+  position: absolute;
+  transform: translateY(-50%);
+  z-index: 99;
+  width: 2rem;
+  height: 2rem;
+  border: none;
+}
+.prev {
+  left: 0;
+  background: url(../IMG/features/left.svg) center no-repeat;
+  background-size: 70%;
+}
+.next {
+  right: 0;
+  background: url(../IMG/features/right.svg) center no-repeat;
+  background-size: 70%;
 }
 /* для LG */
 @media (max-width: 1200px) {
